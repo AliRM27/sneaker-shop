@@ -3,17 +3,17 @@ import './index.scss';
 
 function App() {
   return (
-    <div className="wrapper">
-      <header>
-        <div className="headerLeft">
+    <div className="wrapper clear">
+      <header className="d-flex justify-between align-center p-40">
+        <div className="d-flex align-center">
           <img width={40} height={40} src="img/logo.png"/>
-          <div className="headerInfo">
-            <h3>React Sneakers</h3>
+          <div>
+            <h3 className="text-uppercase">React Sneakers</h3>
             <p>Best sneaker store</p>
           </div>
         </div>
-        <ul className="headerRight">
-          <li>
+        <ul className="d-flex">
+          <li className="mr-30">
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M7.54548 18.1818C7.99735 18.1818 8.36366 17.8155 8.36366 17.3636C8.36366 16.9118 7.99735 16.5455 7.54548 16.5455C7.09361 16.5455 6.72729 16.9118 6.72729 17.3636C6.72729 17.8155 7.09361 18.1818 7.54548 18.1818Z" stroke="#9B9B9B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M16.5455 18.1818C16.9973 18.1818 17.3637 17.8155 17.3637 17.3636C17.3637 16.9118 16.9973 16.5455 16.5455 16.5455C16.0936 16.5455 15.7273 16.9118 15.7273 17.3636C15.7273 17.8155 16.0936 18.1818 16.5455 18.1818Z" stroke="#9B9B9B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -28,8 +28,22 @@ function App() {
           </li>
         </ul>
       </header>
-      <div className="content">
+      <div className="content p-40">
         <h1>All sneakers</h1>
+        
+        <div className="card">
+          <img src="" alt=""/>
+          <p></p>
+          <div>
+            <div>
+              <span>Cost:</span>
+              <b>2000 eur.</b>
+            </div>
+            <button>
+              <img width={11} height={11} src="img/plus.svg" alt="Plus"/>
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );
